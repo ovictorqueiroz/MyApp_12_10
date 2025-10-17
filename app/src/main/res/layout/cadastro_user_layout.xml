@@ -5,12 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecuperarUsuarioActivity">
+    tools:context=".CadastroUserActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recuperar senha - ESTÁ FUNCIONANDO"
+        android:text="Cadastar usuario esta funcionando"
         />
+
 
 </RelativeLayout>
