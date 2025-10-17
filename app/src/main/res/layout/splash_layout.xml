@@ -5,6 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/bikelogo"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="#FDCB02"
+        android:layout_below="@+id/companyLogo"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BikeFlash"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/progress_horizontal"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:fontFamily="@font/bbhsansbartle"
+        android:textColor="#1A1A1A"
+        />
+
 
 </RelativeLayout>
