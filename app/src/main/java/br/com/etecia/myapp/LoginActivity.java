@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,11 +13,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 
 public class LoginActivity extends AppCompatActivity {
     MaterialButton btnEntrar;
-    TextView txtRecPass;
-    TextView txtCadastrar;
+    TextView txtRecPass, txtCadastrar;
+
+    TextInputEditText emailInput, passInput;
 
 
     @Override
@@ -34,6 +37,9 @@ public class LoginActivity extends AppCompatActivity {
         txtCadastrar = findViewById(R.id.txtCadastrar);
         txtRecPass = findViewById(R.id.txtRecPass);
 
+        emailInput = findViewById(R.id.emailInput);;
+        passInput = findViewById(R.id.passInput);;
+
         txtCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +52,24 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), RecuperarUsuarioActivity.class));
                 finish();
+            }
+        });
+
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email, password;
+
+                email = emailInput.getText().toString();
+                password = passInput.getText().toString();
+
+                if (email.equals("joao.silva49@gmail.com") && password.equals("admin")){
+                    startActivity(new Intent(getApplicationContext(), MenuPrincipal.class));
+                    finish();
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Usuário ou senha Inválidos!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
