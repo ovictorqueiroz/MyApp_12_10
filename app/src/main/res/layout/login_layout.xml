@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:fontFamily="@font/bbhsansbartle"
+        android:textColor="@color/font_color"
         android:text="LOGIN"
         android:textAlignment="center"
         android:textSize="25sp" />
@@ -66,6 +67,7 @@
         android:fontFamily="@font/bbhsansbartle"
         android:text="Recuperar Senha"
         android:textAlignment="textEnd"
+        android:textColor="@color/font_color"
         android:textSize="7.5sp" />
 
 
@@ -76,7 +78,7 @@
         android:layout_below="@id/txtRecPass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#FDCB02"
+        android:backgroundTint="@color/primary_color"
         android:text="Entrar" />
 
     <TextView
