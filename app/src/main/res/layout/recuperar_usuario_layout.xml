@@ -5,12 +5,70 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecuperarUsuarioActivity">
+    tools:context=".LoginActivity">
 
     <TextView
+        android:id="@+id/txtRecSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recuperar senha - ESTÁ FUNCIONANDO"
-        />
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/bbhsansbartle"
+        android:text="RECUPERAR SENHA"
+        android:textAlignment="center"
+        android:textColor="@color/font_color"
+        android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bbhsansbartle"
+        android:text="Informe seu e-mail e te enviaremos um link para recuperar sua senha"
+        android:textAlignment="center"
+        android:textColor="@color/font_color"
+        android:layout_below="@id/txtRecSenha"
+        android:textSize="10sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRecSenha"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="75dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRecPass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Recuperar Senha" />
+
+    <TextView
+        android:id="@+id/txtCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRecPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/bbhsansbartle"
+        android:text="Já Possui uma conta? Entrar"
+        android:textAlignment="center"
+        android:textSize="7.5sp" />
 </RelativeLayout>
