@@ -8,7 +8,30 @@
     android:layout_margin="15dp"
     tools:context=".MenuPrincipal"
     android:orientation="vertical"
+    android:background="@color/white"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/bikelogo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/bbhsansbartle"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txtWelcome"
@@ -17,6 +40,7 @@
         android:fontFamily="@font/bbhsansbartle"
         android:text="Bem-Vindo, Admin"
         android:textAlignment="center"
+        android:textSize="20sp"
         android:textColor="@color/primary_color"
         android:layout_marginTop="5dp"
         />
@@ -46,7 +70,7 @@
             <ImageView
                 android:layout_width="175dp"
                 android:layout_height="175dp"
-                android:src="@drawable/bikeicon"
+                android:src="@drawable/bike_icon"
                 android:scaleType="fitCenter"
                 />
 
@@ -71,7 +95,8 @@
         android:layout_below="@+id/txtWelcome"
         android:layout_marginTop="5dp"
         app:cardCornerRadius="15dp"
-        app:contentPadding="15sp">
+        app:contentPadding="15sp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -125,7 +150,7 @@
                 <ImageView
                     android:layout_width="175dp"
                     android:layout_height="175dp"
-                    android:src="@drawable/mappinicon"
+                    android:src="@drawable/map_pin_icon"
                     android:scaleType="fitCenter"
                     />
 
@@ -160,7 +185,7 @@
                 <ImageView
                     android:layout_width="175dp"
                     android:layout_height="175dp"
-                    android:src="@drawable/booking_icon"
+                    android:src="@drawable/contract_icon"
                     android:scaleType="centerCrop"
 
                     />
@@ -204,7 +229,7 @@
                 <ImageView
                     android:layout_width="175dp"
                     android:layout_height="175dp"
-                    android:src="@drawable/bikeicon"
+                    android:src="@drawable/profile_icon"
                     android:scaleType="fitCenter"
                     />
 
@@ -213,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/outfitmedium"
-                    android:text="Bicicletas"
+                    android:text="Perfil"
                     android:textAlignment="center"
                     android:textSize="25sp" />
 
@@ -239,7 +264,7 @@
                 <ImageView
                     android:layout_width="175dp"
                     android:layout_height="175dp"
-                    android:src="@drawable/sacicon"
+                    android:src="@drawable/sac_icon"
                     android:scaleType="centerCrop"
 
                     />
