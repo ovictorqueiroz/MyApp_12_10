@@ -27,6 +27,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="75dp"
         app:boxStrokeColor="@color/primary_color"
+        app:helperTextTextColor="@color/primary_color"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -47,6 +48,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="30dp"
         app:boxStrokeColor="@color/primary_color"
+        app:helperTextTextColor="@color/primary_color"
         >
 
         <com.google.android.material.textfield.TextInputEditText
