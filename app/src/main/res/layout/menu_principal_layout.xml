@@ -54,7 +54,7 @@
         >
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardLayout1"
+        android:id="@+id/cardBicicletas"
         android:layout_width="175dp"
         android:layout_height="225dp"
         android:layout_below="@+id/txtWelcome"
@@ -91,7 +91,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardLayout2"
+        android:id="@+id/cardReservar"
         android:layout_width="175dp"
         android:layout_height="225dp"
         android:layout_below="@+id/txtWelcome"
@@ -137,7 +137,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardLayout1"
+            android:id="@+id/cardOnde"
             android:layout_width="175dp"
             android:layout_height="225dp"
             android:layout_below="@+id/txtWelcome"
@@ -174,7 +174,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardLayout2"
+            android:id="@+id/cardPlanos"
             android:layout_width="175dp"
             android:layout_height="225dp"
             android:layout_below="@+id/txtWelcome"
@@ -220,7 +220,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardLayout1"
+            android:id="@+id/cardPerfilUsuario"
             android:layout_width="175dp"
             android:layout_height="225dp"
             android:layout_below="@+id/txtWelcome"
@@ -257,7 +257,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardLayout2"
+            android:id="@+id/cardSAC"
             android:layout_width="175dp"
             android:layout_height="225dp"
             android:layout_below="@+id/txtWelcome"
