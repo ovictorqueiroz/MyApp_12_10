@@ -62,6 +62,8 @@
         app:cardCornerRadius="15dp"
         app:contentPadding="15sp"
         android:layout_weight="1"
+        android:clickable="true"
+        android:focusable = "true"
         >
 
         <LinearLayout
