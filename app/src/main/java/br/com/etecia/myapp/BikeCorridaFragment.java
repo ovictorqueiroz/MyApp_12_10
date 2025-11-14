@@ -8,15 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
-public class BikeUrbanaFragment extends Fragment {
+public class BikeCorridaFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_bike_urbana, container, false);
+        View view = inflater.inflate(R.layout.fragment_bike_corrida, container, false);
 
-        // Nesse espaço vai o código deste fragmento
+
         return view;
     }
 }
