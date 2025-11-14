@@ -76,6 +76,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/bike_icon"
                 android:scaleType="fitCenter"
+
                 />
 
             <TextView

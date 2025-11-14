@@ -5,15 +5,55 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Bicicletas"
     android:orientation="vertical"
-    >
+    tools:context=".Bicicletas">
+
+    <TextView
+        android:id="@+id/headerBicicleta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/bbhsansbartle"
+        android:gravity="center"
+        android:text="Bicicletas" />
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Voltar"
-        />
+        android:text="Voltar" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutBike"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_icon"
+            android:text="Urbanas" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_racing_icon"
+            android:text="Corrida" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_bmx_icon"
+            android:text="BMX" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/bike_electric_icon"
+            android:text="Elétricas" />
+
+        </com.google.android.material.tabs.TabLayout>
 
 
 </LinearLayout>
