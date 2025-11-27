@@ -9,4 +9,22 @@ public class ListBicicletas {
     public ListBicicletas() {
     }
 
+    //Criando getter e setter
+
+
+    public String getTituloBike() {
+        return tituloBike;
+    }
+
+    public String getDescBike() {
+        return descBike;
+    }
+
+    public float getPrecoBike() {
+        return precoBike;
+    }
+
+    public int getImgBike() {
+        return imgBike;
+    }
 }
