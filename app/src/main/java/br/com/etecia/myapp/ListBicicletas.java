@@ -1,16 +1,13 @@
 package br.com.etecia.myapp;
 
 public class ListBicicletas {
+    //Criando os atributos
     private String tituloBike;
     private String descBike;
     private float precoBike;
     private int imgBike;
 
-    public ListBicicletas() {
-    }
-
-    //Criando getter e setter
-
+    //Criando os métodos getter e setter
     public String getTituloBike() {
         return tituloBike;
     }
