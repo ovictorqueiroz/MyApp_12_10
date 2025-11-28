@@ -26,7 +26,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
 
             <TextView
                 android:id="@+id/modeloCardHeader"
@@ -37,7 +39,7 @@
                 android:gravity="center_horizontal"
                 android:text="Nome Bike" />
 
-                <TextView
+            <TextView
                 android:id="@+id/modeloCardDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,11 +47,19 @@
                 android:fontFamily="@font/outfitregular"
                 android:text="Descrição da Bicicleta" />
 
+            <TextView
+                android:id="@+id/modeloCardPreco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/bbhsansbartle"
+                android:text="R$ 0,00" />
+
 
         </LinearLayout>
 
 
-
-            </LinearLayout>
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
